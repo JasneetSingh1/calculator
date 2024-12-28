@@ -16,7 +16,7 @@ body{
    display: flex;
    flex-direction: column;
    width: 500px;
-   height: 500px;
+   height: 550px;
    border: 10px solid rgba(47, 47, 47, 1);
    background-color: black;
 }
@@ -67,7 +67,27 @@ button{
     width: 100px;
     height: 100%;
     margin: 1px 0px;
-    
+}
+
+
+.end-functions{
+    display: flex;
+    flex-direction: row;
+    margin: 1px 2px;
+    padding: 2px 6px;
+    justify-content: center;
+    align-items: center;
+}
+.clear{
+    width: 100%;
+    margin: 1px 2px;
+    padding: 6px 6px;
+}
+
+.equal{
+    width: 100%;
+    margin: 1px 2px;
+    padding: 6px 6px;
 }
 
 /* DISPLAY */

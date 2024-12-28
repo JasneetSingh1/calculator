@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <div id="display" value="display"></div>
+        <div id="display" value="display">0</div>
         <div class="calc-buttons">
             <div class="numbers">
                 <button class="number" value="7">7</button>
@@ -24,14 +24,19 @@
                 <button class="number " value=".">.</button>
             </div>
             <div class="operators">
-                <button class="operation clear">Clear</button>
-                <button class="operation">+</button>
-                <button class="operation">-</button>
-                <button class="operation">x</button>
-                <button class="operation">÷</button>
-                <button class="operation">=</button>
+                
+                <button class="operation" value="+">+</button>
+                <button class="operation"  value="-">-</button>
+                <button class="operation"  value="x">x</button>
+                <button class="operation"  value="/">÷</button>
+                
               
             </div>
+            
+        </div>
+        <div class="end-buttons">
+            <button class="clear">Clear</button>
+            <button class="equal"  value="=">=</button>
         </div>
     </div>
 </body>
