@@ -84,6 +84,17 @@ function clears(){
     opp.classList.remove('active'); 
 }
 
+function smartRound(num, decimal = 5){
+    const part = num.toString().split('.');
+
+    if(part.length < 2 || part[1].length <= decimal){
+        return num;
+    }
+    else{
+        return Number(num.toFixed(3));
+    }
+}
+
 clear.addEventListener('click', (clears));
 
 let numberOne;
@@ -115,8 +126,9 @@ opp.addEventListener('click', (e) =>{
 })
 
 equals.addEventListener('click', (e) =>{
-    numberOne = operate(numberOne, operator, numberTwo);
-    display.textContent = Number(numberOne).toFixed(5);
+    result = operate(numberOne, operator, numberTwo);
+    numberOne = smartRound(result);
+    display.textContent = numberOne;
     opp.classList.remove('active');   
 })
 
